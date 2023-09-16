@@ -1,15 +1,90 @@
 :root {
+--text: rgb(107, 202, 197);
 
 }
 body {
 
+
 }
 
+
 header {
+display: flex;
+width: 100%;
 background-color: slategrey;
 }
 
+#profile_title{
+    flex: 30%;
+}
+
+#profile_nav{
+    flex: 70%;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+
+padding: 30px;
+
+}
 
 nav a {
-color: #2d2bb1; 
+display: flex;
+padding-bottom: 3px;
+border-bottom: 3.5px solid var(--text);
+text-decoration: none;
+
+font-size:125%;
+
+color: var(--text) 
+}
+span {
+margin: 0px 5px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(107, 202, 197);
+    width: 20%;
+    padding: 15px;
+    margin: 20px,0px;
+    font-size: 250%;
+}
+
+main {
+    width: 100%;
+    background-image: url("./Images/ranger-4df6c1b6.png");
+    background-size: cover;
+    height: 30vh;
+/* display: flex;
+flex: content; */
+}
+
+#subtitle {
+    background-color: var(--text);
+    position: absolute;
+    top:35vh;
+    right: 5vw;
+    font-size: 200%;
+
+}
+
+#main_about_me {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    border: 1px solid black;
+}
+
+#about_me_title {
+    flex:25%;
+    background-color: lightgreen;
+}
+
+#about_me_text {
+    flex: 75%;
+    background-color: lightblue;
 }
