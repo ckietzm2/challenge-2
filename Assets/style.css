@@ -74,7 +74,9 @@ main {
 }
 
 #work {
-display: flex;   
+display: flex;  
+flex-wrap: wrap;
+flex-direction: row; 
 width: 100%; 
 }
 
@@ -88,7 +90,7 @@ width: 100%;
 
 #about_me_title {
     font-size: 300%;
-    flex:20%;
+    flex:0 0 20%;
    
     text-align: end;
     color: var(--text);
@@ -101,37 +103,45 @@ width: 100%;
 #about_me_text {
     flex: 80%;
     flex-wrap: wrap;
+    font-size: 150%
    ;
 }
 #work_title {
     font-size: 300%;
-    flex:20%;
+    margin-left: 14.2vw;
     
     text-align: end;
     color: var(--text);
     
-    padding-right: 5vw;
+    padding-right: 4.95vw;
     border-right: 5px solid var(--text);
-    background-color: white;
+    
     
 }
-#work_pic_1 {
-    flex: 26.66%;
-    background-color: grey;
-    background-size: cover;
-    height: 30vh;
+#project_pic {
+    
+    width: 70vw;
+    height: 60vh;
 }
-#work_pic_2 {
-    flex: 26.66%;
-    background-color: blue;
-    background-size: cover;
-    height: 30vh;
+
+
+#coming_soon1 {
+    border: solid 5px salmon;
+    width: 18.5vw;
+    
+    height: 50vh;
 }
-#work_pic_3 {
-    flex: 26.66%;
-    background-color: brown;
-    background-size: cover;
-    height: 30vh;
+#coming_soon2 {
+    border: solid 5px salmon;
+    width: 18.5vw;
+    
+    height: 50vh;
+}
+#coming_soon3 {
+    border: solid 5px salmon;
+    width: 18.5vw;
+    
+    height: 50vh;
 }
 
 
@@ -143,7 +153,7 @@ width: 100%;
 
 #contact_me_title {
     font-size: 300%;
-    flex:20%;
+    flex:0 0 20%;
     text-align: end;
     color: var(--text);
     padding-right: 5vw;
@@ -154,6 +164,37 @@ width: 100%;
 
 #contact_me_link {
     flex: 80%;
-    font-size:125%;
-    color: var(--text) 
+    font-size:150%;
+    color: var(--text);
+    margin-top: 5vh;
 }
+
+h2 a {
+color: orangered;
+background-color: var(--text);
+}
+
+span a {
+    color: var(--text);
+}
+
+section h2 {
+margin-top: -50px;
+}
+
+.mini_projects {
+    margin: 50px;   
+}
+
+#mini_section {
+display: flex;
+border-left: 5px solid var(--text);
+margin-left: 24.65vw;
+
+}
+
+.mini_projects h2 {
+text-align: center;
+color: var(--text);
+}
+
